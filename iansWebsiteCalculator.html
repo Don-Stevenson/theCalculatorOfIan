@@ -108,7 +108,7 @@
           class="placeholder"
         />
       </form>
-      <div id="answer" class="answer"></div>
+      <div id="answer" class="answer">answer here</div>
       <div style="display: flex; gap: 20px; flex-flow: column">
         <div style="display: flex; gap: 5px">
           <button
@@ -158,7 +158,7 @@
           </button>
           <button
             class="button"
-            onclick="{document.getElementById('answer').innerHTML = iansCalculator(document.getElementById('num1').value, document.getElementById('operator').value, document.getElementById('num2').value)}"
+            onclick="{document.querySelectorAll('answer1').innerHTML = iansCalculator(document.getElementById('num1').value, document.getElementById('operator').value, document.getElementById('num2').value)}"
           >
             click here for the answer
           </button>
@@ -171,70 +171,9 @@
             align-items: center;
           "
         >
-          <div id="answer1" class="answer"></div>
+          <div id="answer1" class="answer1">answer here</div>
+          <div id="answer2" class="answer">answer here</div>
         </div>
-        <div style="display: flex; gap: 5px">
-          <button
-            class="button"
-            onclick="{document.getElementById('answer').innerHTML = iansCalculator(document.getElementById('num1').value, document.getElementById('operator').value, document.getElementById('num2').value)}"
-          >
-            click here for the answer
-          </button>
-
-          <button
-            class="button"
-            onclick="{document.getElementById('answer').innerHTML = iansCalculator(document.getElementById('num1').value, document.getElementById('operator').value, document.getElementById('num2').value)}"
-          >
-            click here for the answer
-          </button>
-          <button
-            class="button"
-            onclick="{document.getElementById('answer').innerHTML = iansCalculator(document.getElementById('num1').value, document.getElementById('operator').value, document.getElementById('num2').value)}"
-          >
-            click here for the answer
-          </button>
-          <button
-            class="button"
-            onclick="{document.getElementById('answer').innerHTML = iansCalculator(document.getElementById('num1').value, document.getElementById('operator').value, document.getElementById('num2').value)}"
-          >
-            click here for the answer
-          </button>
-        </div>
-        <div style="display: flex; gap: 5px">
-          <button
-            class="button"
-            onclick="{document.getElementById('answer').innerHTML = iansCalculator(document.getElementById('num1').value, document.getElementById('operator').value, document.getElementById('num2').value)}"
-          >
-            click here for the answer
-          </button>
-          <button
-            class="button"
-            onclick="{document.getElementById('answer').innerHTML = iansCalculator(document.getElementById('num1').value, document.getElementById('operator').value, document.getElementById('num2').value)}"
-          >
-            click here for the answer
-          </button>
-          <button
-            class="button"
-            onclick="{document.getElementById('answer').innerHTML = iansCalculator(document.getElementById('num1').value, document.getElementById('operator').value, document.getElementById('num2').value)}"
-          >
-            click here for the answer
-          </button>
-          <button
-            class="button"
-            onclick="{document.getElementById('answer').innerHTML = iansCalculator(document.getElementById('num1').value, document.getElementById('operator').value, document.getElementById('num2').value)}"
-          >
-            click here for the answer
-          </button>
-        </div>
-        <div
-          style="
-            display: flex;
-            gap: 5px;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <div id="answer1" class="answer"></div>
         </div>
       </div>
     </div>

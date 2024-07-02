@@ -25,7 +25,7 @@ function iansCalculator(num1, operator, num2) {
     answerInsideFunction = randomNopeGenerator()
   }
 
-  return (document.getElementById("answer1").innerHTML = answerInsideFunction)
+  return (document.querySelectorAll("answer").innerHTML = answerInsideFunction)
 }
 
 function randomNopeGenerator() {
